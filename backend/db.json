@@ -1,4 +1,63 @@
 {
-   
-    
+    "alunos": [
+        {
+            "id": "1",
+            "nome": "Fabrício Suhet",
+            "idade": 23,
+            "nomeCursos": [
+                "Academia do Flutter",
+                "Imersao GetX"
+            ]
+        },
+        {
+            "nome": "Thais Ribeiro",
+            "idade": 22,
+            "nomeCursos": [
+                "Academia do Flutter",
+                "Imersao GetX"
+            ]
+        },
+        {
+            "nome": "Edilma Silva",
+            "idade": 40,
+            "nomeCursos": [
+                "Academia do Flutter",
+                "Imersao GetX"
+            ]
+        },
+        {
+            "id": "2",
+            "nome": "Thais Costa",
+            "idade": 23,
+            "nomeCursos": [
+                "Academia do Flutter",
+                "Imersao GetX"
+            ],
+            "cursos": [
+                {
+                    "id": 1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": true
+                },
+                {
+                    "id": 2,
+                    "nome": "Imersao GetX",
+                    "isAluno": true
+                }
+            ],
+            "endereco": {
+                "rua": "Rua X",
+                "numero": 200,
+                "CEP": "00000000",
+                "cidade": {
+                    "id": 1,
+                    "nome": "Vicente Pires"
+                },
+                "telefone": {
+                    "ddd": 61,
+                    "telefone": "999999999"
+                }
+            }
+        }
+    ]
 }
