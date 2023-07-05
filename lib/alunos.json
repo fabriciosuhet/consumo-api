@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Fabrício Suhet",
+        "idade": 23,
+        "nomeCursos": [
+            "Academia do Flutter",
+            "Imersao GetX"
+        ]
+    },
+    {
+        "nome": "Thais Ribeiro",
+        "idade": 22,
+        "nomeCursos": [
+            "Academia do Flutter",
+            "Imersao GetX"
+        ]
+    },
+    {
+        "nome": "Edilma Silva",
+        "idade": 40,
+        "nomeCursos": [
+            "Academia do Flutter",
+            "Imersao GetX"
+        ]
+    }
+]

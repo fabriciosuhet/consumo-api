@@ -1,0 +1,33 @@
+{
+    "nome": "Fabrício Suhet",
+    "idade": 23,
+    "nomeCursos": [
+        "Academia do Flutter",
+        "Imersao GetX"
+    ],
+    "cursos": [
+        {
+            "id": 1,
+            "nome": "Academia do Flutter",
+            "isAluno": true
+        },
+        {
+            "id": 2,
+            "nome": "Imersao GetX",
+            "isAluno": false
+        }
+    ],
+    "endereco": {
+        "rua": "Rua X",
+        "numero": 200,
+        "CEP": "00000000",
+        "telefone": {
+            "ddd": 61,
+            "telefone": "999999999",
+            "cidade": {
+                "id": 1,
+                "nome": "Vicente Pires"
+            }
+        }
+    }
+}
