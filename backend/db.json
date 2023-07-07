@@ -7,23 +7,32 @@
             "nomeCursos": [
                 "Academia do Flutter",
                 "Imersao GetX"
-            ]
-        },
-        {
-            "nome": "Thais Ribeiro",
-            "idade": 22,
-            "nomeCursos": [
-                "Academia do Flutter",
-                "Imersao GetX"
-            ]
-        },
-        {
-            "nome": "Edilma Silva",
-            "idade": 40,
-            "nomeCursos": [
-                "Academia do Flutter",
-                "Imersao GetX"
-            ]
+            ],
+            "cursos": [
+                {
+                    "id": 1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": true
+                },
+                {
+                    "id": 2,
+                    "nome": "Imersao GetX",
+                    "isAluno": false
+                }
+            ],
+            "endereco": {
+                "rua": "Rua X",
+                "numero": 100,
+                "CEP": "00000000",
+                "cidade": {
+                    "id": 1,
+                    "nome": "Vicente Pires"
+                },
+                "telefone": {
+                    "ddd": 61,
+                    "telefone": "999999999"
+                }
+            }
         },
         {
             "id": "2",
@@ -50,12 +59,12 @@
                 "numero": 200,
                 "CEP": "00000000",
                 "cidade": {
-                    "id": 1,
-                    "nome": "Vicente Pires"
+                    "id": 2,
+                    "nome": "Taguatinga Sul"
                 },
                 "telefone": {
                     "ddd": 61,
-                    "telefone": "999999999"
+                    "telefone": "888888888"
                 }
             }
         }
