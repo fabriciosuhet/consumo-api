@@ -46,4 +46,9 @@ class Endereco {
     final endereco = Endereco.fromMap(jsonMap);
     return endereco;
   }
+
+  @override
+  String toString() {
+    return 'Endereco(rua: $rua, numero: $numero, cep: $cep, cidade: $cidade, telefone: $telefone)';
+  }
 }

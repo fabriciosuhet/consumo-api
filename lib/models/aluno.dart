@@ -1,10 +1,11 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 import 'curso.dart';
 import 'endereco.dart';
 
 class Aluno {
-  String id;
+  String? id;
   String nome;
   int? idade;
   List<String> nomeCursos;
@@ -12,9 +13,9 @@ class Aluno {
   List<Curso> cursos;
 
   Aluno({
-    required this.id,
+    this.id,
     required this.nome,
-    required this.idade,
+    this.idade,
     required this.nomeCursos,
     required this.endereco,
     required this.cursos,
@@ -35,12 +36,14 @@ class Aluno {
     return Aluno(
       id: map['id'] ?? '',
       nome: map['nome'] ?? '',
-      idade: map['idade'],
-      nomeCursos: map['nomeCursos'],
+      idade: map['idade'] ?? 0,
+      nomeCursos: List<String>.from(map['nomeCursos']),
       endereco: Endereco.fromMap(map['endereco']),
-      cursos: map['cursos' as List<dynamic>]
-          .map<Curso>((cursoMap) => Curso.fromMap(cursoMap))
-          .toList(),
+      cursos: List<Curso>.from(
+        (map['cursos'] as List<dynamic>).map<Curso>(
+          (cursoMap) => Curso.fromMap(cursoMap),
+        ).toList(),
+      ),
     );
   }
 
@@ -50,5 +53,10 @@ class Aluno {
     Map<String, dynamic> jsonMap = jsonDecode(json);
     final aluno = Aluno.fromMap(jsonMap);
     return aluno;
+  }
+
+  @override
+  String toString() {
+    return 'Aluno(id: $id, nome: $nome, idade: $idade, nomeCursos: $nomeCursos, endereco: $endereco, cursos: $cursos)';
   }
 }

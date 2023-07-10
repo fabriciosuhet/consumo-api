@@ -1,10 +1,18 @@
 import 'dart:convert';
 
+import 'package:consumo_api/controller/alunos_controller.dart';
 import 'package:consumo_api/models/telefone.dart';
 
+void main () {
+  // AlunosController().findAll();
+  // AlunosController().findById("2");
+  // AlunosController().update();
+  AlunosController().insert();
+}
 
 
-void main(List<String> args) {
+
+void main2(List<String> args) {
   final cidadeJson = '''
     [{
         "id": 1,

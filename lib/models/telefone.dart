@@ -35,4 +35,7 @@ class Telefone {
     final telefone = Telefone.fromMap(jsonMap);
     return telefone;
   }
+
+  @override
+  String toString() => 'Telefone(ddd: $ddd, telefone: $telefone)';
 }

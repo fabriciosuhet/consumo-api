@@ -31,4 +31,7 @@ class Cidade {
     final cidade = Cidade.fromMap(jsonMap);
     return cidade;
   }
+
+  @override
+  String toString() => 'Cidade(id: $id, nome: $nome)';
 }
